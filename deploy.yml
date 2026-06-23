@@ -1,0 +1,9 @@
+# exp 8 below
+---
+- hosts: localhost
+
+  tasks:
+    - name: Copy JAR
+      copy:
+        src: "/var/lib/jenkins/workspace/exp8/target/my-app-1.0-SNAPSHOT.jar"
+        dest: "/home/student/t.jar" # or /var/lib/jenkins/t.jar
